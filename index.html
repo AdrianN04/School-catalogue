@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catalog de note</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="lista_elevi_wrapper">
+      <h1>Students list</h1>
+
+      <form action="" class="form">
+        <label for="insertName">
+          <input type="text" id="insertName" />
+        </label>
+        <button class="add" id="addStudent">Add Student</button>
+        <h3 class="studentTextDisplay">text</h3>
+      </form>
+
+      <div class="sort">
+        <button id="sortAscStudents">Acending Sort</button>
+        <button id="sortDescStudents">Descending Sort</button>
+      </div>
+
+      <table id="studentTable" border="1">
+        <tr class="tableRowStudent">
+          <th>Name</th>
+          <th>Average Grades</th>
+          <th>Student Grades</th>
+          <th>Delete Student</th>
+        </tr>
+
+        <tbody id="tableBodyStudent">
+          <!--           <tr class="tableRowStudent">
+            <td>Adrian</td>
+            <td>9.5</td>
+            <td><button id="seeGrades">See / Add grades</button></td>
+            <td><button id="deleteStudent">Delete Student</button></td>
+          </tr> -->
+        </tbody>
+      </table>
+
+      <div id="note_elev_wrapper">
+        <button id="hideGrades">Hide Grades</button>
+        <h2 id="showStudent"></h2>
+        <form action="" class="form">
+          <label for="gradesToAdd">
+            <input type="number" id="insertGrades" min="1" max="10" />
+          </label>
+          <button class="add" id="addGrades">Add Grades</button>
+          <h3 class="gradeTextDisplay">text</h3>
+        </form>
+
+        <div class="sort">
+          <button id="sortAscGrades">Acending Sort</button>
+          <button id="sortDescGrades">Descending Sort</button>
+        </div>
+
+        <table id="tableGrades" border="1">
+          <tr class="tableRowGrades">
+            <th>Grades</th>
+            <th>X</th>
+          </tr>
+          <tbody id="tableBodyGrades">
+            <tr class="tableRowGrades">
+              <td>9</td>
+              <td><button id="deleteGrades">x</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+
+    <script src="app.js"></script>
+  </body>
+</html>
